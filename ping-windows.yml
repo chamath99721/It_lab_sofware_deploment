@@ -1,0 +1,9 @@
+
+---
+- name: Test connection to IT-LAB-001
+  hosts: IT-LAB-001
+  gather_facts: false
+
+  tasks:
+    - name: Test Windows connectivity
+      ansible.windows.win_ping:
